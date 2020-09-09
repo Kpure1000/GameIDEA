@@ -2,9 +2,10 @@
 @echo @author Kpure1000
 @echo **************************
 @echo check for Git...[if NOT installed, just EXIT]
-
-@FOR /F "delims=" %%I IN (
-"git.exe" ) DO (
+@FOR /F "delims=" %%I 
+@IN (
+"git.exe" ) 
+@DO (
 	@if exist %%~$PATH:I (
 		echo DO exist Git 
 		@git version
