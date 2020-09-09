@@ -1,7 +1,13 @@
-@echo check for Git...
-git version
+@echo This is an auto push script
+@echo @author Kpure1000
 @echo **************************
-@echo if Git's not been installed, please EXIT.
+@echo check for Git...[if NOT installed, just EXIT]
+@echo   
+git version
+@echo   
+@echo **************************
+@echo Already going to PUSH!
+@echo   
 @pause
 @echo **************************
 @cd %userprofile%\Desktop
