@@ -21,7 +21,7 @@
 	@echo exist GameIDEA folder, push it up...
 	@cd .\GameIDEA\
 	@git add -A
-	@git commit -m "auto-commit by bat command"
+	@git commit -m "auto-commit by script"
 	@git push origin master
 	@start .
 ) else (
