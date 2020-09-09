@@ -2,12 +2,17 @@
 @echo @author Kpure1000
 @echo **************************
 @echo check for Git...[if NOT installed, just EXIT]
-@echo   
-git version
-@echo   
+
+@FOR /F "delims=" %%I IN (
+"git.exe" ) DO (
+	@if exist %%~$PATH:I (
+		echo DO exist Git 
+		@git version
+	) else ( echo Git has been not INSTALL or not in PATH yet.
+			@pause	)
+	)
 @echo **************************
 @echo Already going to PUSH!
-@echo   
 @pause
 @echo **************************
 @cd %userprofile%\Desktop
