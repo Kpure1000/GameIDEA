@@ -1,5 +1,5 @@
 @echo **************************
-@echo This is an AUTO push script
+@echo This is an AUTO PUSH script for GitHub
 @echo Author @Kpure1000 https://github.com/Kpure1000
 @echo **************************
 @echo Check for Git...[if NOT installed, just EXIT]
@@ -18,17 +18,18 @@
 @echo **************************
 @cd %userprofile%\Desktop
 @if exist GameIDEA\ (
-	@echo exist GameIDEA folder, pull it down...
+	@echo exist GameIDEA folder, push it up...
 	@cd .\GameIDEA\
-	git add -A
-	git commit -m "auto-commit by bat command"
-	git push origin master
+	@git add -A
+	@git commit -m "auto-commit by bat command"
+	@git push origin master
 	@start .
 ) else (
 	@echo NOT exist GameIDEA folder, clone one...
-	git clone https://github.com/Kpure1000/GameIDEA.git
+	@git clone https://github.com/Kpure1000/GameIDEA.git
 	@cd .\GameIDEA\
 	@start .
 )
 @echo **************************
+@echo Done
 @pause

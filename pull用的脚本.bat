@@ -20,8 +20,7 @@
 @if exist GameIDEA\ (
 	@echo exist GameIDEA folder, pull it down...
 	@cd .\GameIDEA\
-	@git add -A
-	@git PULL origin master
+	@git pull origin master
 	@start .
 ) else (
 	@echo NOT exist GameIDEA folder, clone one...
@@ -30,4 +29,5 @@
 	@start .
 )
 @echo **************************
+@echo Done
 @pause
